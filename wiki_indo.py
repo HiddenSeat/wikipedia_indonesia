@@ -21,11 +21,13 @@ def search_wiki(Event=None) :
     # showinfo("Wikipedia Answer",answer)
     parts_list.insert("1.0","\n" + answer)
 
-# Creating Label
-label_name = Label(win, text="Created By\nFaishal Setiawan", fg="white",bg="#FF5939")
+# -------- Optional-------------
+# Creating Label creator
+label_name = Label(win, text="Created By\nHidden Seat", fg="white",bg="#FF5939")
 label_name.grid(row=0,column=0)
+# -------- End Optional----------
 
-
+# Creating Label
 label = Label(win, text="Wikipedia Search: ", font=(10), bg="skyblue")
 label.grid(row=0,column=0,columnspan=5,pady=(10,0))
 
